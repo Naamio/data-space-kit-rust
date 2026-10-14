@@ -1,0 +1,3 @@
+[submodule "specifications/wasi"]
+	path = specifications/wasi
+	url = git@github.com:Naamio/data-space-wasi.git

@@ -1,0 +1,7 @@
+# The same pin as the extension host, so the kit, its examples and the host they
+# run in are built with one compiler. The WebAssembly target builds the example
+# extensions.
+[toolchain]
+channel = "nightly-2026-10-10"
+components = ["rustfmt", "clippy"]
+targets = ["wasm32-wasip3"]

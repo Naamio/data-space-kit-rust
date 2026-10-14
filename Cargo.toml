@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: 2026 Omnifi Foundation
+# SPDX-License-Identifier: MPL-2.0
+
+[workspace]
+members = ["extension-kit", "rdf", "examples/n-triples"]
+resolver = "3"
+
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+license = "MPL-2.0"
+publish = false
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "deny"
+missing_debug_implementations = "deny"
+
+[workspace.lints.clippy]
+all = { level = "deny", priority = -2 }
+pedantic = { level = "deny", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+cognitive_complexity = "deny"
+excessive_nesting = "deny"
+too_many_lines = "deny"
+too_many_arguments = "deny"
+type_complexity = "deny"
+missing_docs_in_private_items = "deny"
+expect_used = "deny"
+unwrap_used = "deny"
+panic = "deny"
+todo = "deny"
+unimplemented = "deny"

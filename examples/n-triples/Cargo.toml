@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2026 Omnifi Foundation
+# SPDX-License-Identifier: MPL-2.0
+
+[package]
+name = "n-triples-extension"
+description = "An example RDF syntax extension that reads N-Triples, written with the Rust kit"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+# Built as a WebAssembly component, and as a Rust library so the grammar can be tested
+# natively.
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+naamio-space-kit-rdf = { path = "../../rdf" }
+
+[lints]
+workspace = true

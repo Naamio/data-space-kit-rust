@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Omnifi Foundation
+# SPDX-License-Identifier: MPL-2.0
+
+[package]
+name = "naamio-space-kit"
+description = "The foundation every kind of Naamio Space extension builds on, whichever way it is delivered"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+# Generates the guest side of a contract for an extension delivered as a WebAssembly
+# component. `async-spawn` provides `spawn_local`, which lets an export return its streams
+# at once and write to them afterwards.
+wit-bindgen = { version = "0.62.0", features = ["async-spawn"] }
+
+[lints]
+workspace = true

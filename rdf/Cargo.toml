@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2026 Omnifi Foundation
+# SPDX-License-Identifier: MPL-2.0
+
+[package]
+name = "naamio-space-kit-rdf"
+description = "Writing Naamio Space extensions that read Resource Description Framework syntaxes, against the linked-data:rdf contract"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+naamio-space-kit = { path = "../extension-kit" }
+
+[lints]
+workspace = true
